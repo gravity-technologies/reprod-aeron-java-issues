@@ -126,9 +126,9 @@ func getClientOpts(cfg *Config) *client.Options {
 	opts := client.NewOptions()
 	opts.IdleStrategy = idlestrategy.NewDefaultBackoffIdleStrategy()
 	opts.Loglevel = zapcore.DebugLevel
-	// opts.IngressChannel = cfg.IngressChannel
-	// opts.IngressEndpoints = cfg.IngressEndpoints
-	// opts.EgressChannel = cfg.EgressChannel
+	opts.IngressChannel = cfg.IngressChannel
+	opts.IngressEndpoints = cfg.IngressEndpoints
+	opts.EgressChannel = cfg.EgressChannel
 	return opts
 }
 
