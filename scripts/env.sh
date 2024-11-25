@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-DATA_DIR="$(pwd)/log"
-echo "🟢 DATA_DIR: ${DATA_DIR}"
+DATA_DIR=""
 
 SERVICE_COUNT=3
 
@@ -14,7 +13,6 @@ MEM_DIR=${DATA_DIR}/memdir
 
 # DISK FOLDER
 DISK_DIR=${DATA_DIR}/diskdir
-echo "🟢 DISK_DIR: ${DISK_DIR}"
 # PORT CONFIGS
 PORT_BASE=9000
 PORTS_PER_NODE=100

@@ -33,7 +33,7 @@ function startJavaService() {
     MEM_DIR=${MEM_DIR} \
     ARCHIVE_DIR=${ARCHIVE_DIR} \
     DISK_DIR=${DISK_DIR} \
-    java -cp ./java/app/build/libs/app.jar \
+    java -cp ./cluster/app/build/libs/app.jar \
     -javaagent:./aeron-agent-${VERSION}.jar \
     -Daeron.cluster.member.id=${1} \
     -Daeron.mdtag=${1} \
